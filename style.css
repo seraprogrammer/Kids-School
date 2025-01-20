@@ -5,8 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+.body {
+  background-image: url("./assets/bg.png");
+}
 .header {
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,6 +72,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .hero {
@@ -118,4 +122,95 @@
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+  cursor: pointer;
+}
+
+.curriculum {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.curriculum .curriculum_title {
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 60px 0px;
+}
+
+.curriculum_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.curriculum > .curriculum_card > .curriculum_single_card {
+  padding: 52.819px 40.668px 53.762px 40.878px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.943px solid #def5ff;
+  gap: 32.069px;
+  border-radius: 18.864px;
+  color: #202020;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.654px;
+}
+
+.card_one {
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+.card_two {
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+.card_three {
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 60px 0px;
+}
+
+.slide button {
+  padding: 17px 2px 14px 0px;
+  border-radius: 30px;
+  background: var(--Orange, #fea301);
+  border: none;
+  color: #fff;
+  width: 4rem;
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px;
+}
+
+.stories {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.stories .stories_title {
+  text-align: center;
+  color: #000;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.5px; 
 }
