@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .header_logo {
   display: flex;
@@ -19,12 +19,12 @@
   gap: 10px;
 }
 .header_logo p {
-  color: var(--Black, #111);
+  color: #111;
   font-family: Quicksand;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 93.75% */
+  line-height: 30px;
 }
 .header ul {
   display: flex;
@@ -34,10 +34,12 @@
 .header ul > li {
   list-style: none;
 }
-.header > ul > li > a {
+
+.header ul li a {
   text-decoration: none;
   font-size: 20px;
 }
+
 .header > ul > li:nth-child(1) a {
   color: #fea301;
 }
@@ -54,7 +56,7 @@
 
 .header button {
   background-color: #fea301;
-  padding: 10px;
+  padding: 10px 20px;
   width: 197px;
   border-radius: 12px;
   border: none;
@@ -64,5 +66,54 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+}
+
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero_left h2 {
+  font-family: Quicksand;
+  font-size: 94px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+.empowering {
+  color: #fea301;
+}
+.towards {
+  color: #01acfd;
+}
+
+.hero_left p {
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+  margin: 25px 0px;
+}
+
+.hero_left button {
+  background-color: #111;
+  padding: 10px 20px;
+  width: 197px;
+  border-radius: 12px;
+  border: none;
+  height: 50px;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
 }
