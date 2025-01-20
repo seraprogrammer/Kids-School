@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -10,7 +12,20 @@
   align-items: center;
   margin-top: 20px;
 }
-
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header_logo p {
+  color: var(--Black, #111);
+  font-family: Quicksand;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 93.75% */
+}
 .header ul {
   display: flex;
   gap: 32px;
@@ -44,4 +59,10 @@
   border-radius: 12px;
   border: none;
   height: 50px;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
 }
