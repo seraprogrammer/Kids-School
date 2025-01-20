@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header ul {
+  display: flex;
+  gap: 32px;
+}
+
+.header ul > li {
+  list-style: none;
+}
+.header > ul > li > a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.header > ul > li:nth-child(1) a {
+  color: #fea301;
+}
+.header > ul > li:nth-child(2) a {
+  color: #01acfd;
+}
+
+.header > ul > li:nth-child(3) a {
+  color: #05d4df;
+}
+.header > ul > li:nth-child(4) a {
+  color: #5d58ef;
+}
+
+.header button {
+  background-color: #fea301;
+  padding: 10px;
+  width: 197px;
+  border-radius: 12px;
+  border: none;
+  height: 50px;
+}
