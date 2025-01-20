@@ -11,6 +11,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 .header_logo {
   display: flex;
@@ -21,7 +22,7 @@
 .header_logo p {
   color: #111;
   font-family: Quicksand;
-  font-size: 32px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
@@ -29,6 +30,7 @@
 .header ul {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .header ul > li {
@@ -63,14 +65,14 @@
   height: 50px;
   color: #fff;
   font-family: Quicksand;
-  font-size: 20px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
 }
 
 .hero {
-  max-width: 1440px;
+  max-width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -80,7 +82,7 @@
 
 .hero_left h2 {
   font-family: Quicksand;
-  font-size: 94px;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 700;
   line-height: 90px;
@@ -95,7 +97,7 @@
 
 .hero_left p {
   font-family: Quicksand;
-  font-size: 20px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
