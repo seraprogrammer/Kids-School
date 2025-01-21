@@ -9,12 +9,14 @@
 }
 
 .header {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1160px;
+  margin: 20px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 .header_logo {
   display: flex;
@@ -76,7 +78,7 @@
 }
 
 .hero {
-  max-width: 80%;
+  max-width: 1160px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -126,7 +128,7 @@
 }
 
 .curriculum {
-  max-width: 80%;
+  max-width: 1160px;
   margin: 0 auto;
   background: url("./assets/bg.png");
   background: lightgray 0% 0% / 100px 100px repeat,
@@ -221,7 +223,7 @@
 }
 
 .grid-container {
-  max-width: 80%;
+  max-width: 1160px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -388,7 +390,7 @@ footer {
   font-size: 42.143px;
   font-style: normal;
   font-weight: 700;
-  line-height: 39.509px; /* 93.75% */
+  line-height: 39.509px;
 }
 
 .footer_logo_p {
@@ -465,7 +467,3 @@ footer {
 .social_icons a:hover {
   opacity: 0.8;
 }
-
-/* .social_icons a:hover {
-  opacity: 0.8;
-} */

@@ -14,7 +14,6 @@
   }
 }
 
-/* Mobile styles (base styles) */
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -90,7 +89,6 @@
   }
 }
 
-/* Tablet styles */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero {
     padding: 40px;
@@ -119,7 +117,6 @@
   }
 }
 
-/* Laptop and larger screens */
 @media screen and (min-width: 1025px) {
   .header {
     padding: 0 40px;
@@ -138,7 +135,6 @@
   }
 }
 
-/* Common responsive adjustments */
 img {
   max-width: 100%;
   height: auto;
@@ -154,7 +150,6 @@ img {
   min-height: 150px;
 }
 
-/* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
@@ -162,7 +157,6 @@ img {
   }
 }
 
-/* Print styles */
 @media print {
   .header button,
   .hero button,
