@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .right-column {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-.body {
-  background-image: url("./assets/bg.png");
-}
+
 .header {
   max-width: 100%;
   display: flex;
@@ -128,6 +128,15 @@
 .curriculum {
   max-width: 80%;
   margin: 0 auto;
+  background: url("./assets/bg.png");
+  background: lightgray 0% 0% / 100px 100px repeat,
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  background-position-y: 50px;
+  background-repeat: no-repeat;
 }
 
 .curriculum .curriculum_title {
@@ -200,17 +209,171 @@
 }
 
 .stories {
-  max-width: 80%;
   margin: 0 auto;
+  background-image: url("./assets/bg.png"),
+    linear-gradient(
+      0deg,
+      rgba(254, 163, 1, 0.3) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+  background-size: 100px 100px, cover;
+  background-position: center 50px, center;
+  background-repeat: repeat, no-repeat;
 }
 
-.stories .stories_title {
-  text-align: center;
-  color: #000;
-  text-align: center;
+.grid-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.left-column {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.right-column {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.featured-card {
+  height: 97%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.featured-card .image-container {
+  height: 400px;
+}
+
+.card:not(.featured-card) .image-container {
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.date-badge {
+  position: absolute;
+  bottom: -25px;
+  left: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 15.339px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28.761px; /* 187.5% */
+  text-transform: capitalize;
+}
+
+.stories .stories_card_one {
+  background-color: #3cd8e8;
+  border-radius: 47.934px;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+}
+.stories .stories_card_two {
+  border-radius: 47.934px;
+  background: #95b226;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+}
+.stories .stories_card_three {
+  border-radius: 47.934px;
+  background: #5d58f0;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+}
+.stories .stories_card_four {
+  border-radius: 47.934px;
+  background: #95b226;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+}
+.stories .stories_card_five {
+  border-radius: 47.934px;
+  background: #95b226;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+}
+.card-content {
+  padding: 24px;
+}
+
+.featured-card .card-content {
+  padding: 32px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.featured-card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.view_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.view_button button {
+  color: #fff;
+  width: 197px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
   font-family: Quicksand;
-  font-size: 46px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 57.5px; 
+  line-height: 30px;
+}
+footer {
+  height: 100vh;
+  background: #01acfd;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_conten_left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
