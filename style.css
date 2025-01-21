@@ -9,8 +9,8 @@
 }
 
 div#date {
-  background-color: #e3dbdb;
-  padding: 3px;
+    background-color: #f3edd8;
+    padding: 3px;
 }
 
 marquee {
@@ -103,12 +103,12 @@ marquee {
 }
 
 .hero {
-  max-width: 1160px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    max-width: 1160px;
+    width: 100%;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero_left h2 {
@@ -137,7 +137,7 @@ marquee {
 
 .hero_left p {
   font-family: Quicksand;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
