@@ -280,6 +280,15 @@ marquee {
     background-repeat: repeat
 }
 
+.stories_title {
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 60px 0px
+}
+
 .grid-container {
   max-width: 1160px;
   margin: 0 auto;
