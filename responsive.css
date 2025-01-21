@@ -91,7 +91,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero {
-    padding: 40px;
+    padding: 0 40px;
   }
 
   .hero_left h2 {
@@ -120,10 +120,6 @@
 @media screen and (min-width: 1025px) {
   .header {
     padding: 0 40px;
-  }
-
-  .hero {
-    padding: 60px 40px;
   }
 
   .curriculum_card {
