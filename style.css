@@ -8,6 +8,25 @@
   box-sizing: border-box;
 }
 
+div#date {
+  background-color: #e3dbdb;
+  padding: 3px;
+}
+
+marquee {
+  font-size: 15px;
+  font-family: system-ui;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .header {
   max-width: 1160px;
   margin: 20px auto;
@@ -153,7 +172,6 @@
       rgba(255, 255, 255, 0.3) 100%
     );
   background-position-y: 50px;
-  background-repeat: no-repeat;
 }
 
 .curriculum .curriculum_title {
@@ -190,6 +208,20 @@
   line-height: 30.654px;
 }
 
+.card_one a {
+  color: #64c8ff;
+  text-decoration: none;
+}
+
+.card_two a {
+  color: #f0aa00;
+  text-decoration: none;
+}
+
+.card_three a {
+  color: #8700ff;
+  text-decoration: none;
+}
 .card_one {
   background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
     #fff;
@@ -212,19 +244,31 @@
 }
 
 .slide button {
-  padding: 17px 2px 14px 0px;
-  border-radius: 30px;
-  background: var(--Orange, #fea301);
-  border: none;
-  color: #fff;
-  width: 4rem;
+  padding: 1rem; 
+  border-radius: 50%; 
+  background: linear-gradient(
+    145deg,
+    #fea301,
+    #e29400
+  ); 
+  border: none; 
+  color: #fff; 
+  width: 4rem; 
+  height: 4rem; 
   font-family: "Font Awesome 5 Free";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 24px;
+  font-size: 1.5rem;
+  font-weight: 900; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+  transition: transform 0.2s, box-shadow 0.2s; 
 }
-
+.slide button:hover{
+   transform: scale(1.1); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /
+}
 .stories {
   margin: 0 auto;
   background-image: url("./assets/bg.png"),
@@ -234,7 +278,6 @@
       rgba(255, 255, 255, 0.3) 100%
     );
   background-position: center 50px, center;
-  background-repeat: repeat, no-repeat;
 }
 
 .grid-container {
@@ -308,21 +351,46 @@
   background-color: #3cd8e8;
   border-radius: 47.934px;
 }
+.stories_card_one:hover {
+  background-color: #111;
+  border: 1px solid gray;
+  transition: all 300ms ease-in-out;
+}
 .stories .stories_card_two {
   border-radius: 47.934px;
   background: #95b226;
+}
+.stories_card_two:hover {
+  background-color: #111;
+  border: 1px solid gray;
+  transition: all 300ms ease-in-out;
 }
 .stories .stories_card_three {
   border-radius: 47.934px;
   background: #5d58f0;
 }
+.stories_card_three:hover {
+  background-color: #111;
+  border: 1px solid gray;
+  transition: all 300ms ease-in-out;
+}
 .stories .stories_card_four {
   border-radius: 47.934px;
   background: #95b226;
 }
+.stories_card_four:hover {
+  background-color: #111;
+  border: 1px solid gray;
+  transition: all 300ms ease-in-out;
+}
 .stories .stories_card_five {
   border-radius: 47.934px;
   background: #95b226;
+}
+.stories_card_five:hover {
+  background-color: #111;
+  border: 1px solid gray;
+  transition: all 300ms ease-in-out;
 }
 .card-content {
   padding: 24px;
@@ -373,6 +441,7 @@
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 footer {
@@ -487,4 +556,20 @@ footer {
 
 .social_icons a:hover {
   opacity: 0.8;
+}
+
+.header button:hover {
+  background-color: #111;
+  transition: all 300ms ease-in-out;
+  border: 1px solid white;
+}
+
+.hero_left button:hover {
+  background-color: #ff8a00;
+  transition: all 300ms ease-in-out;
+  border: 1px solid black;
+}
+.view_button button:hover {
+  background-color: #ff8a00;
+  transition: all 300ms ease-in-out;
 }

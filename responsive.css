@@ -1,4 +1,7 @@
 @media (max-width: 768px) {
+  .left-column {
+    display: none;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -15,16 +18,12 @@
     width: 100%;
   }
 
-  .date-badge {
-    position: absolute;
-    bottom: 9px;
-    left: 12px;
-    padding: 8px 8px;
-    font-size: 12px;
-  }
-
   .curriculum .curriculum_title {
     font-size: 20px;
+  }
+
+  .card-content {
+    padding: 15px;
   }
 }
 
@@ -32,6 +31,7 @@
   .header {
     gap: 20px;
     padding: 10px;
+    box-shadow: 0px 1px 0px 0px #fea301;
   }
 
   .header ul {
@@ -79,11 +79,6 @@
     padding: 20px;
   }
 
-  .left-column {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
   .right-column {
     grid-column: auto;
     grid-template-columns: 1fr 1fr;
@@ -127,14 +122,6 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .header {
-    padding: 0 40px;
-  }
-
-  .hero {
-    padding: 60px 40px;
-  }
-
   .curriculum_card {
     gap: 30px;
   }
@@ -156,33 +143,7 @@ img {
 
 .card:not(.featured-card) .image-container {
   height: auto;
-  min-height: 150px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-
-@media print {
-  .header button,
-  .hero button,
-  .view_button,
-  .social_icons {
-    display: none;
-  }
-
-  body {
-    color: black;
-    background: white;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
+  min-height: 134px;
 }
 
 @media screen and (max-width: 776px) {
@@ -202,5 +163,54 @@ img {
   }
   .slide {
     display: none;
+  }
+}
+
+
+.date-badge {
+  position: absolute;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+  .date-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .card {
+    position: relative;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 770px) {
+  .date-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .date-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    padding: 8px 12px;
+    font-size: 13px;
   }
 }
