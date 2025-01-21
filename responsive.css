@@ -13,3 +13,171 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile styles (base styles) */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero_left h2 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
+  .hero_left button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero_right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .curriculum_card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .curriculum_single_card {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .left-column {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .right-column {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .social_icons {
+    justify-content: center;
+  }
+}
+
+/* Tablet styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    padding: 40px;
+  }
+
+  .hero_left h2 {
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
+  .curriculum_card {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .curriculum_single_card {
+    width: calc(50% - 10px);
+  }
+
+  .grid-container {
+    padding: 20px;
+  }
+
+  .right-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Laptop and larger screens */
+@media screen and (min-width: 1025px) {
+  .header {
+    padding: 0 40px;
+  }
+
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .curriculum_card {
+    gap: 30px;
+  }
+
+  .curriculum_single_card {
+    flex: 1;
+  }
+}
+
+/* Common responsive adjustments */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-card .image-container {
+  height: auto;
+  min-height: 250px;
+}
+
+.card:not(.featured-card) .image-container {
+  height: auto;
+  min-height: 150px;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header button,
+  .hero button,
+  .view_button,
+  .social_icons {
+    display: none;
+  }
+
+  body {
+    color: black;
+    background: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
