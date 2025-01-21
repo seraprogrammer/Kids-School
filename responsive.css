@@ -1,16 +1,25 @@
 @media (max-width: 768px) {
   .grid-container {
+    display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .left-column {
-    grid-column: 1;
-    grid-row: auto;
+    gap: 20px;
   }
 
   .right-column {
-    grid-column: 1;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .right-column .card {
+    width: 100%;
+  }
+
+  .date-badge {
+    position: absolute;
+    bottom: -10px;
+    left: 16px;
+    padding: 8px 15px;
   }
 }
 
@@ -31,7 +40,7 @@
   }
 
   .hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px;
     text-align: center;
   }
@@ -72,14 +81,14 @@
 
   .right-column {
     grid-column: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer_content {
     flex-direction: column;
     gap: 40px;
-    align-items: center;
-    text-align: center;
+    align-items: self-start;
+    text-align: start;
   }
 
   .social_icons {
@@ -90,6 +99,7 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .hero {
     padding: 40px;
+    gap: 0px;
   }
 
   .hero_left h2 {
@@ -108,10 +118,6 @@
 
   .grid-container {
     padding: 20px;
-  }
-
-  .right-column {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -155,7 +161,6 @@ img {
   }
 }
 
-/* Print styles */
 @media print {
   .header button,
   .hero button,
